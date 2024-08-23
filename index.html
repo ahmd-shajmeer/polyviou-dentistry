@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Animate.css CDN -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <title>Dentist Lincoln Park, MI | Polyviou Family Dentistry | Dentist 48146</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html"><img class="logo" src="assets/polyviou_logo.webp" alt="polyviou_logo"></a>
+            <div class="navbar">
+                <div class="mobile__nav">
+                    <button class="nav-btn"> <i class="fa-solid fa-phone "></i></button>
+                    <button class="nav-btn"><i class="fa-regular fa-calendar-days "></i></button>
+                    <button class="nav-btn"><i class="fa-solid fa-location-dot "></i></button>
+                    <button onclick="showMenu()" class="nav-btn"> <i
+                            class="fa-solid fa-bars fa-sharp "></i></button>
+                    <div class="mobile-menu">
+                        <button onclick="closeMenu()" class="nav-btn close-btn"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <ul>
+                            <li>HOME</li>
+                            <li>ABOUT</li>
+                            <li>SERVICES</li>
+                            <li>FOR PATIENTS</li>
+                            <li>INVISALIGN&reg;</li>
+                            <li>CONTACT</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="desktop__nav">
+                    <div class="desktop__nav_1">
+                        <a href="#" class="primary_btn">
+                            <i class="fa-solid fa-phone"></i>(313) 388-2400
+                        </a>
+                        <a href="#" class="primary_btn">Request an Appoinment</a>
+                        <a href="#" class="primary_btn">New Patient Online Booking</a>
+                    </div>
+                    <div class="desktop__nav_2">
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">FOR PATIENTS</a></li>
+                            <li><a href="#">INVISALIGN&reg;</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <video src="assets/hero-bg.mp4" autoplay loop muted class="bg-video
+            "></video>
+            <div class="hero-ads">
+                <p><i class="fa-sharp fa-regular fa-gem"></i>Home for Affordable Invisalign&reg;</p>
+                <p><a href="">Call today</a> for consultation. <a href="">Click here to learn more</a></p>
+            </div>
+            <div class="hero-body">
+                <h1 class="animate__animated animate__fadeInRight">Servicing Downriver since 1995</h1>
+                <a href="#">REQUEST AN APPOINTMENT</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About section -->
+    <section class="about">
+        <img src="assets/family-img.jpg " alt="image-not-found">
+        <div class="about-text">
+            <h1>ABOUT POLYVIOU FAMILY DENITISTRY</h1>
+            <p>At Polyviou Family Dentistry, we pride ourselves on providing top-notch dental care to patients in
+                Lincoln Park, Michigan, and surrounding areas. Led by our experienced dentist, Dr. Paul Polyviou, our
+                dedicated team is passionate about creating beautiful smiles and ensuring the comfort of every patient.
+                With over 25 years of experience in the field, we have honed our skills in helping our patients overcome
+                dental anxiety and making each visit to our office a positive one.</p>
+            <p>We understand that financial concerns can often be a barrier to receiving necessary dental treatment.
+                This is why we offer flexible payment options and handle insurance billing for your convenience. Your
+                smile is important to us, so schedule a free consultation with us today to learn more about how we can
+                help you achieve optimal oral health.</p>
+            <a href="#" class="secondary-btn">Call us today</a>
+        </div>
+    </section>
+
+    <!-- New Patients  -->
+    <section class="new-patients">
+        <div class="container">
+            <h1>Welcoming New Patients</h1>
+            <p>We are thrilled to offer exclusive discounts for new patients to make your dental care experience even
+                more rewarding. Interested in taking advantage of our New Patient Specials?</p>
+            <div class="new-patients-btn">
+                <a href="#" class="secondary-btn">Learn more</a>
+                <a href="#" class="secondary-btn">New Patient Online Booking</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties -->
+    <section class="specialties">
+        <div class="specialty-body">
+            <h1>Our Specialties</h1>
+            <div class="card-container">
+                <div class="spec-card">
+                    <div class="icon-card">
+                        <img src="assets/teeth-1.webp" alt="Teeth Image" class="spec-icon">
+                    </div>
+                    <h1>Invisalign&reg;</h1>
+                    <p>Transform your smile with Invisalign®, the discreet and comfortable way to straighten your teeth.
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="spec-card">
+                    <div class="icon-card">
+                        <img src="assets/teeth-2.webp" alt="Teeth Image" class="spec-icon">
+                    </div>
+                    <h1>General & family dentistry</h1>
+                    <p>Experience the ultimate in oral health care with our comprehensive general and family dentistry
+                        services.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="spec-card">
+                    <div class="icon-card"><img src="assets/teeth-3.webp" alt="Teeth Image" class="spec-icon"></div>
+                    <h1>Restorative dentistry</h1>
+                    <p>Restorative Dentistry repairs and restores damaged teeth, enhancing both function and aesthetics
+                        for
+                        improved oral health.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <a href="#" class="secondary-btn">View our other services</a>
+        </div>
+    </section>
+
+    <!-- Invisalign -->
+    <section class="invisalign">
+        <h1>Invisalign&reg;</h1>
+        <a href="">Read More</a>
+    </section>
+
+    <!-- Meet our doctor -->
+    <section class="doctor">
+        <h1>Meet our doctor</h1>
+        <div class="doc-container">
+            <img src="assets/doctor.webp" alt="Doctor" class="doc animate__animated animate__backInLeft">
+            <div class="about-doc animate__animated animate__backInRight">
+                <h2>Dr. Paul Polyviou</h2>
+                <p>Dr. Paul Polyviou has been practicing dentistry since 1995. Raised in the downriver area, Dr.
+                    Polyviou received his undergraduate degree from Wayne State University and earned his dental degree
+                    from the University of Detroit Mercy School of Dentistry. Dr. Polyviou is truly committed to
+                    providing the highest quality dental care to his patients. As such, he spends countless hours
+                    outside of the office pursuing continuing education courses so that he can maintain the best
+                    dentistry for all his patients.</p>
+                <a href="#" class="secondary-btn">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Qualities -->
+    <section class="qualities">
+        <h1>what set us apart</h1>
+        <div class="quality-container">
+            <div class="quality-card">
+                <span class="number">1.</span>
+                <img src="assets/polyviou-icon-tech.svg" alt="Icons" class="quality-icon">
+                <p class="quality">state-of-the-art technology</p>
+            </div>
+            <div class="quality-card">
+                <span class="number">2.</span>
+                <img src="assets/polyviou-icon-25.webp" alt="Icon" class="quality-icon">
+                <p class="quality">over 25 years of experience</p>
+            </div>
+            <div class="quality-card">
+                <span class="number">3.</span>
+                <img src="assets/polyviou-team.svg" alt="Icon" class="quality-icon">
+                <p class="quality">through friendly team</p>
+            </div>
+            <div class="quality-card">
+                <span class="number">4.</span>
+                <img src="assets/polyviou-icon-camera.svg" alt="Icon" class="quality-icon">
+                <p class="quality">picture perfect results</p>
+            </div>
+            <div class="quality-card">
+                <span class="number">5.</span>
+                <img src="assets/polyviou-icon-emergency.webp" alt="Icon" class="quality-icon">
+                <p class="quality">emergency visits</p>
+            </div>
+            <div class="quality-card">
+                <span class="number">6.</span>
+                <img src="assets/polyviou-icon-payment.svg" alt="Icon" class="quality-icon">
+                <p class="quality">flexible payment options</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews">
+        <h1>Reviews</h1>
+        <h3>Exceptionally high standard of dentistry</h3>
+        <div class="review-container">
+            <div class="review-card">
+                <span class="user-name">F</span>
+                <img src="assets/google.png" alt="Google" class="google">
+                <span class="name">Forrest.G</span>
+                <span class="date">Aug 2024</span>
+                <p class="review">
+                    I will never go to any other dentist but polyviout the hygienists are awesome</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <span class="user-name">J</span>
+                <img src="assets/google.png" alt="Google" class="google">
+                <span class="name">John Doe</span>
+                <span class="date">June 2024</span>
+                <p class="review">Dr. Polyviou and his team are fantastic!</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                </div>
+            </div>
+            <div class="review-card">
+                <span class="user-name">J</span>
+                <img src="assets/google.png" alt="Google" class="google">
+                <span class="name">Jane Doe</span>
+                <span class="date">July 2024</span>
+                <p class="review">Very professional service</p>
+                <div class="stars">
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                    <i class="fa-solid fa-star fa-2xs"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram -->
+    <section class="instgram">
+        <h1>Follow us on Instagram</h1>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-ccb45cf2-f661-499b-aaed-1faa69de27d4 insta" data-elfsight-app-lazy></div>
+    </section>
+
+    <!-- Loctaion -->
+     <section class="location">
+        <div class="address">
+            <h2>Visit Our Office</h2>
+            <h2>Lincoln Park, MI</h2>
+            <span>3784 Dix Hwy, Lincoln Park, MI 48146</span>
+            <span>Email: paulpolyviou@wowway.com</span>
+            <span>Call Us: 800-555-5555</span>
+            <h2>Office Hours</h2>
+            <div class="timings">
+                <div class="days">
+                    <ul>
+                        <li>MON</li>
+                        <li>tue</li>
+                        <li>wed</li>
+                        <li>thu</li>
+                        <li>fri</li>
+                        <li>sat</li>
+                        <li>sun</li>
+                    </ul>
+                </div>
+                <div class="times">
+                    <ul>
+                        <li>8:00 am - 5:00 pm</li>
+                        <li>8:00 am - 5:00 pm</li>
+                        <li>8:00 am - 5:00 pm</li>
+                        <li>8:00 am - 5:00 pm</li>
+                        <li>Closed</li>
+                        <li>Closed</li>
+                        <li>Closed</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2954.2974258186487!2d-83.1949219!3d42.2294584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDEzJzQ2LjEiTiA4M8KwMTEnNDEuNyJX!5e0!3m2!1sen!2sin!4v1724414873356!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+     </section>
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <a href="#" class="secondary-btn" style="font-size: small;">Request an Appointment</a>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="assets/polyviou_logo.webp" alt="Logo">
+            </div>
+            <div class="footer-socials">
+                <p>MON - THU  8:00 am - 5:00 pm</p>
+                <p>FRI - SUN  Closed</p>
+                <div class="socials">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-yelp"></i>
+                </div>
+            </div>
+            <div class="footer-credentials">
+                <a href="#">&copy; Copyright 2024 GrowthPlug, Inc</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Accessibility Statement</a>
+            </div>
+        </div>
+     </footer>
+
+    <!-- Javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
